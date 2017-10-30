@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-import '../assets/css/App.css';
+import '../assets/css/header.css';
+import Tekcode from '../assets/images/tekcode-logo.png';
 import { Navbar, Nav, NavItem, MenuItem, NavDropdown } from 'react-bootstrap';
-
 import { Link } from 'react-router-dom';
 
 class Header extends Component {
@@ -26,6 +26,9 @@ class Header extends Component {
             </NavDropdown>
             <NavItem eventKey={4} href="/contact">Contact</NavItem>
           </Nav>
+          <div className="nav navbar-right">
+              <NavItem eventKey={1} href="/">Inquire</NavItem>
+          </div>
         </Navbar>
       </div>
     );
